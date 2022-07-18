@@ -1,0 +1,10 @@
+<?php
+/**
+  Aquarius_noel - Surcharge des fonction de préprocess pour l'affichage
+  CBE - V1.0.0 - 17-06-2020 - Creation
+**/
+
+function aquarius_noel_preprocess_views_view_table(&$variables)    /* Preprocess pour les vues au format tables. Affichage avec views-view-table.html.twig */
+{
+    $variables['summary_element'] = NULL;   // Supprime cet élément qui apparait même si aucune info n'est donnée.  
+}

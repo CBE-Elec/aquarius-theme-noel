@@ -1,0 +1,89 @@
+/*
+  Aquarius - Menu utilisateur (dans l'en-tête du site)
+  version de noel : nom du bloc modifié !!
+*/
+
+/* CBE : Utilisation de l'ID #block-info-membre-connecte possible car menu / liste définie dans le coeur de Drupal. Donc nom fixe */
+
+#block-aquarius-noel-info-membre-connecte:before { /* Logo du menu */
+  background: transparent url("../../images/Picto_Connexion.jpg") no-repeat center center;
+  background-size: 3em 4em;
+  width: 3em;
+  height: 4em;
+  content: "";
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-left: 15%;
+}
+
+#block-aquarius-noel-info-membre-connecte .content {
+  display: none;
+  position: absolute!important;  /* CBE revoir le positionnement */
+  top: 80px;
+  right: 0;
+  text-align: end;
+  padding: 0.2em 0.3em;
+  margin: 0.2em;
+  background-color: #ffffff;      /* Fond blanc pour effet masquer le contenu de la page, en-dessous */
+  border: #404040 1px solid;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  z-index: 500;
+}
+
+#block-aquarius-noel-info-membre-connecte:hover > div, #block-aquarius-noel-info-membre-connecte:focus > div {
+/* Affichage au passage de la souris ou au focus */
+  display: block;
+}
+
+/* Affichage sur écran large */
+@media all and (min-width: 768px) { /* !! Brakpoint commun avec paramètre de Superfish */
+  #block-aquarius-noel-info-membre-connecte .content {
+    right: unset;
+  }
+}
+
+
+.region-header #block-aquarius-noel-info-membre-connecte { /* Partie relative au menu utilisateur */
+  width: 10%;
+  order: 3;
+}
+
+
+
+
+/* Menu (Block) pour les liens vers les réseaux sociaux */
+.region-footer #block-aquarius-noel-liensversreseauxsociaux ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.region-footer #block-aquarius-noel-liensversreseauxsociaux li {
+  margin: 0 0.25em;
+  text-align: center;
+  padding: 5px;
+}
+
+.region-footer #block-aquarius-noel-liensversreseauxsociaux li img {
+  width: 2em;
+  height: 2em;
+  max-width: unset; /* annule la propriété fixée sur les images dans elements.css */
+}
+
+/* Texte avant les icones masqué sur petit écran */
+.region-footer #block-aquarius-noel-liensversreseauxsociaux li:first-child {
+  display: none;
+}
+
+/* Affichage sur écran large */
+@media all and (min-width: 768px) { /* !! Brakpoint commun avec paramètre de Superfish */
+
+
+  /* Texte avant les icones affiché sur grand écran */
+  .region-footer #block-aquarius-noel-liensversreseauxsociaux li:first-child {
+    display: list-item;
+  }

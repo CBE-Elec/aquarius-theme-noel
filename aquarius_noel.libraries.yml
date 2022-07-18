@@ -1,0 +1,9 @@
+# Main theme library.
+global-styling:
+  js:
+    js/script.js: {}
+    js/snow.js: {}
+  css:
+    base:
+      css/base/style.css: { preprocess: false }
+      css/base/noel.css: { preprocess: false }

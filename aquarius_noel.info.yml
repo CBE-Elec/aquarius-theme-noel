@@ -1,0 +1,20 @@
+name: Aquarius-Noel
+type: theme
+description: Version de Noel
+package: aquarius
+core: 8.x
+core_version_requirement: ^8 || ^9
+logo: 'images/logo.png'
+base theme: aquarius
+
+libraries:
+   - aquarius_noel/global-styling
+
+regions:
+  header: 'Entête'
+  slideshow: 'Diaporama photo'
+  breadcrumb: 'Breadcrumb'
+  content: 'Contenu'
+  sidebar_left: 'Colonne de gauche'
+  sidebar_right: 'Colonne de droite'
+  footer: 'Pied de page'

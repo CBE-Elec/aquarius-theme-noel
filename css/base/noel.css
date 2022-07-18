@@ -1,0 +1,66 @@
+.region-header {
+	border-bottom-color: red!important;
+}
+
+a, .link :not(.button) {
+color: red!important;
+}
+
+a:hover,
+a:focus,
+.link:hover,
+.link:focus {
+  color: #FFBE00!important;
+}
+
+a:active,
+.link:active {
+  color: #FFBE00!important;
+}
+
+.site-footer {
+	background-color: green!important;
+
+}
+
+.site-footer a, .site-footer .link {
+color: white!important;
+}
+
+.main-region {
+	background: linear-gradient(#FF0806,green)!important;
+}
+
+.main-region h1, .main-region h2, .main-region a:not(.button) {
+	color: #FFFFFF!important;
+}
+
+.main-content .frontpage li, .main-content .news li, .main-content .node li, .cke_editable ul li, .main-content .view-content li {
+  background-image: url("../../images/flocon.gif");
+}
+
+.menu-aquarius > li:first-child a {   /* Pictogramme "maison" pour le 1er lien vers Accueil */
+  background-image: url("../../images/Picto_Accueil.png")!important;
+}
+
+.menu-aquarius > li:first-child a:hover {   /* Pictogramme "maison" pour le 1er lien vers Accueil */
+  background-image: url("../../images/Picto_Accueil_hover.png")!important;
+}
+
+
+#block-aquarius-noel-menuprincipal-2 #superfish-main-toggle:before { /* Logo du menu */
+  content: "";
+  background: transparent url("../../images/Picto_Burger_Menu.png") no-repeat center center!important;
+  background-size: 2em 2em;
+  width: 3em;
+  height: 3em;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+
+/* Masque le titre du menu réduit (nom modifiable dans Superfish, à définir sur " ") */
+#block-aquarius-noel-menuprincipal-2 #superfish-main-toggle span {  
+  display: none;
+}
