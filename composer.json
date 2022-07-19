@@ -1,0 +1,15 @@
+{
+    "name": "aquarius/aquarius-theme-noel",
+    "description": "A specific theme for Aquarius plongee scuba club",
+    "type": "drupal-custom-theme",
+    "authors": [
+        {
+            "name": "Cyril Béguet",
+            "email": "webmaster.beguet@free.fr"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "aquarius/aquarius-theme": "^1.1"
+    }
+}

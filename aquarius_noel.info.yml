@@ -2,7 +2,6 @@ name: Aquarius-Noel
 type: theme
 description: Version de Noel
 package: aquarius
-core: 8.x
 core_version_requirement: ^8 || ^9
 logo: 'images/logo.png'
 base theme: aquarius
